@@ -85,5 +85,6 @@ class HouseTest < Minitest::Test
     assert_equal 210.53, house.price_per_square_foot
   end
 
-  def test_
+  def test_rooms_by_category
+  end
 end

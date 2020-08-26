@@ -34,10 +34,7 @@ class House
   end
 
   def details
-    details_hash = Hash.new
-    details_hash["price"] = price
-    details_hash["address"] = address
-    details_hash
+    Hash["price", price, "address", address]
   end
 
   def price_per_square_foot
