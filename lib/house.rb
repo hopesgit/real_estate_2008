@@ -1,10 +1,15 @@
 require "./lib/room"
 
 class House
-
+  attr_reader :address, :rooms
 
   def initialize(price, address)
-    @price = price.to_i
+    @price = price
     @address = address
+    @rooms = []
+  end
+
+  def price
+    @price.delete("$").to_i
   end
 end
