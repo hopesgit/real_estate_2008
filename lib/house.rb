@@ -46,4 +46,18 @@ class House
       room.area
     end
   end
+
+  def unique_categories
+    categories = @rooms.map do |room|
+      room.category
+    end.uniq
+  end
+
+  def rooms_by_category
+    rooms_hash = {}
+    unique_categories.each do |category|
+      rooms_hash[category] = rooms_from_category(category)
+    end
+    rooms_hash
+  end
 end
