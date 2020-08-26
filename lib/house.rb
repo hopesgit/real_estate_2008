@@ -21,7 +21,7 @@ class House
     price > 500000
   end
 
-  def rooms_by_category(category_input)
+  def rooms_from_category(category_input)
     @rooms.find_all do |room|
       room.category == category_input
     end
