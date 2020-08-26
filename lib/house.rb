@@ -39,4 +39,8 @@ class House
     details_hash["address"] = address
     details_hash
   end
+
+  def price_per_square_foot
+    (price.to_f / area).round(2)
+  end
 end
