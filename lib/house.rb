@@ -32,4 +32,11 @@ class House
       room.area
     end
   end
+
+  def details
+    details_hash = Hash.new
+    details_hash["price"] = price
+    details_hash["address"] = address
+    details_hash
+  end
 end
