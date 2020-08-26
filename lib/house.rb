@@ -26,4 +26,10 @@ class House
       room.category == category_input
     end
   end
+
+  def area
+    @rooms.sum do |room|
+      room.area
+    end
+  end
 end
